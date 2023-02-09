@@ -1,13 +1,13 @@
 import { Outlet } from 'react-router-dom';
-import { BasicNavbar } from '../DashboardComponents/DashboardNavbar';
+import { DashboardNavbar } from '../DashboardComponents/DashboardNavbar';
 
-const DashboardLayout = () => {
+const dashboardLayout = () => {
   return (
     <div className="flex relative bg-main-dark-bg">
       <div className="bg-gray-200 w-full min-h-screen flex-2">
         <div className="fixed md:static bg-blue-600 navbar w-full">
         {/* <div className="fixed md:static navbar w-full" style={{backgroundColor: '#0d6efd'}}> */}
-          <BasicNavbar />
+          <DashboardNavbar />
         </div>
         <Outlet />
       </div>
@@ -15,4 +15,4 @@ const DashboardLayout = () => {
   );
 }
 
-export default DashboardLayout;
+export default dashboardLayout;

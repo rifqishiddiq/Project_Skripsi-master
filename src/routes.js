@@ -1,4 +1,5 @@
 import { lazy } from "react";
+import DashboardLayout from "./components/DashboardComponents/DashboardLayout";
 
 // PAGE
 const HomePage = lazy(() => import("./pages/landing_page/HomePage"));
@@ -34,6 +35,13 @@ const routes = [
     exact: true,
     name: "Login Page",
     element: <LoginPage />,
+  },
+  {
+    path: "/dashboardlayout",
+    key: "dashboardlayout",
+    exact: true,
+    name: "dashboard",
+    element: <DashboardLayout />,
   },
 ];
 

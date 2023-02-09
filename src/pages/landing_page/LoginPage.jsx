@@ -1,13 +1,32 @@
 import React from 'react';
+import { useState } from 'react';
+import { useNavigate } from "react-router-dom";
+
 
 export default function Login() {
+
+    const navigate = useNavigate();
+    const [loading, setLoading] = useState(false)
+    const onFormSubmit = e => {
+        e.preventDefault()
+        const formData = new FormData(e.target),
+            formDataObj = Object.fromEntries(formData.entries())
+        console.log(formDataObj)
+        setLoading(true)
+        setTimeout(() => {
+            setLoading(false)
+            navigate('/DashboardLayout');
+        }, 1000);
+        // formDataObj tinggal dilempar ke api 
+    }
+
     return (
         <div className="relative flex flex-col justify-center min-h-screen overflow-hidden">
             <div className="w-full p-6 m-auto bg-white rounded-md shadow-md lg:max-w-xl">
                 <h1 className="text-3xl font-semibold text-center text-black">
                     LOG IN
                 </h1>
-                <form className="mt-6">
+                <form className="mt-6" onSubmit={onFormSubmit}>
                     <div className="mb-2">
                         <label
                             for="email"

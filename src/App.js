@@ -18,16 +18,6 @@ function App() {
             />
           ))}
         </Route>
-        <Route element={<DashboardLayout />}>
-          {routes.map((r, index) => (
-            <Route
-              key={index}
-              path={r.path}
-              exact={r.exact}
-              element={(r.element)}
-            />
-          ))}
-        </Route>
       </Routes>
     </div>
   );

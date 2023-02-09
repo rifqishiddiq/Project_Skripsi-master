@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/Logo_PENS_putih.png";
 
-export const BasicNavbar = (_props) => {
+export const DashboardNavbar = (_props) => {
   const [activeMenu, setActiveMenu] = useState('')
   useEffect(() => {
     let recent_url = window.location.pathname.split('/')
@@ -21,7 +21,7 @@ export const BasicNavbar = (_props) => {
             src={logo}
             alt="user-profile"
           />
-          <span className="text-white font-bold text-2xl ml-4 drop-shadow-[0_4px_4px_rgba(0,0,0,0.6)]">DEPARTEMEN TEKNOLOGI MULTIMEDIA KREATIF</span>
+          <span className="text-white font-bold text-2xl ml-4 drop-shadow-[0_4px_4px_rgba(0,0,0,0.6)]">Dashboard</span>
         </NavLink>
       </div>
       <div className="flex items-center gap-x-1">
