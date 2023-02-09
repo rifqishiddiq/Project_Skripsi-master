@@ -15,7 +15,7 @@ export default function Login() {
         setLoading(true)
         setTimeout(() => {
             setLoading(false)
-            navigate('/DashboardLayout');
+            navigate('/admin/dashboard');
         }, 1000);
         // formDataObj tinggal dilempar ke api 
     }
@@ -29,7 +29,7 @@ export default function Login() {
                 <form className="mt-6" onSubmit={onFormSubmit}>
                     <div className="mb-2">
                         <label
-                            for="email"
+                            htmlFor="email"
                             className="block text-sm font-semibold text-gray-800"
                         >
                             Email
@@ -41,7 +41,7 @@ export default function Login() {
                     </div>
                     <div className="mb-2">
                         <label
-                            for="password"
+                            htmlFor="password"
                             className="block text-sm font-semibold text-gray-800"
                         >
                             Password

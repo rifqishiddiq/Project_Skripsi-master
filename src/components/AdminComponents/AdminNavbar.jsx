@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/Logo_PENS_putih.png";
 
-export const DashboardNavbar = (_props) => {
+export const AdminNavbar = (_props) => {
   const [activeMenu, setActiveMenu] = useState('')
   useEffect(() => {
     let recent_url = window.location.pathname.split('/')
