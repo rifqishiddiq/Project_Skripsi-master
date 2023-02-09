@@ -8,7 +8,7 @@ export default function CardComponent() {
             <img
                 className="object-cover w-full h-48"
                 src="https://cdn.pixabay.com/photo/2022/08/18/09/20/houses-7394390__340.jpg"
-                alt="image"
+                alt="image2"
             />
             <div className="p-4">
                 <h4 className="text-xl font-semibold tracking-tight text-blue-600">
@@ -29,7 +29,7 @@ export default function CardComponent() {
             <img
                 className="object-cover w-full h-48"
                 src="https://cdn.pixabay.com/photo/2022/08/18/09/20/houses-7394390__340.jpg"
-                alt="image"
+                alt="image3"
             />
             <div className="p-4">
                 <h4 className="text-xl font-semibold tracking-tight text-blue-600">
@@ -50,7 +50,7 @@ export default function CardComponent() {
             <img
                 className="object-cover w-full h-48"
                 src="https://cdn.pixabay.com/photo/2022/08/18/09/20/houses-7394390__340.jpg"
-                alt="image"
+                alt="image4"
             />
             <div className="p-4">
                 <h4 className="text-xl font-semibold tracking-tight text-blue-600">

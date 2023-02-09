@@ -51,6 +51,7 @@ export default function Login() {
                             className="block w-full px-4 py-2 mt-2 text-black bg-white border rounded-md focus:border-blue-400 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
                         />
                     </div>
+                    {/* eslint-disable-next-line */}
                     <a
                         href="#"
                         className="text-xs text-blue-600 hover:underline"
@@ -58,7 +59,8 @@ export default function Login() {
                         Forget Password?
                     </a>
                     <div className="mt-6">
-                        <button className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-blue-700 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">
+                        <button className={`w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform ${loading ? 'bg-blue-400' : 'bg-blue-700 hover:bg-blue-600'} rounded-md focus:outline-none focus:bg-blue-600`} disabled={loading}>
+                            {loading &&<span className="w-4 h-4 border-2 mr-2 border-stone-200 border-t-transparent border-solid rounded-full animate-spin inline-block"></span>}
                             Login
                         </button>
                     </div>
@@ -67,6 +69,7 @@ export default function Login() {
                 <p className="mt-8 text-xs font-light text-center text-gray-700">
                     {" "}
                     Belum Punya Akun?{" "}
+                    {/* eslint-disable-next-line */}
                     <a
                         href="#"
                         className="font-medium text-blue-600 hover:underline"

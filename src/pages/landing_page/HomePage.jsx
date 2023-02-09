@@ -67,6 +67,7 @@ const HomePage = () => {
             ></path>
             <path d="M9 11H3v5a2 2 0 002 2h4v-7zM11 18h4a2 2 0 002-2v-5h-6v7z"></path>
           </svg>
+          {/* eslint-disable-next-line */}
           <a href="#">
             <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
               Costumer Service
@@ -75,6 +76,7 @@ const HomePage = () => {
           <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
             Bisa Hubungi CS/Laboran DTMK
           </p>
+          {/* eslint-disable-next-line */}
           <a
             href="#"
             class="inline-flex items-center text-blue-600 hover:underline"
